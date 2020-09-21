@@ -1,11 +1,14 @@
 //1.
-// const person = [{ name: "Jill" }, { name: "" }, { name: "Bob" }];
+const person = [{ name: "Jill" }, { name: "" }, { name: "Bob" }];
 //create a function 'greeting' that maps through the array.
 // Use a ternary.
 // If there is a name it should say 'Hello <name>' otherwise it should say,
 // 'Hello Stranger'.
 
-
+function sayHello(name){
+return name.map(person => person.name !=='' ? `Hello ${person.name}` : `Hello stranger`)
+}
+ console.log(sayHello(person))
 
 
 //2.
@@ -58,7 +61,7 @@ let arr = [
   
   
   
-Object Methods:
+// Object Methods:
 5.//Use object methods to solve problem
 // Write a method that doubles the price of each item in the prices object and place those values in a new object called priceDoubler
 let prices = {
