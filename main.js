@@ -5,9 +5,12 @@ const person = [{ name: "Jill" }, { name: "" }, { name: "Bob" }];
 // If there is a name it should say 'Hello <name>' otherwise it should say,
 // 'Hello Stranger'.
 
+//'solution'
 function sayHello(name){
 return name.map(person => person.name !=='' ? `Hello ${person.name}` : `Hello stranger`)
 }
+
+//testing
  console.log(sayHello(person))
 
 
@@ -16,6 +19,14 @@ return name.map(person => person.name !=='' ? `Hello ${person.name}` : `Hello st
 // If they are below 15 then log 'cannot drive', if they are 15 then log 'can drive with a parent', if they are 16 or above then 'yes they can drive'
 
 
+
+function oldEnough(age){
+return age > 15 ? `yes they can drive`
+: age === 15 ?`can drive with parent`
+: `cannot drive`;
+};
+
+console.log(oldEnough(17))
 
 
 //3.
@@ -62,7 +73,7 @@ let arr = [
   
   
 // Object Methods:
-5.//Use object methods to solve problem
+// 5.Use object methods to solve problem
 // Write a method that doubles the price of each item in the prices object and place those values in a new object called priceDoubler
 let prices = {
   cigarettes: 5.99,
