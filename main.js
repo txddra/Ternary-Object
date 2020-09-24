@@ -132,3 +132,12 @@ let prices = {
   coke: { lg: 2.99, sm: 1.99 },
   chips: 2.79,
 };
+
+
+let x = Object.entries(prices)
+let value = Object.values(prices) 
+
+
+
+
+console.log(value)
