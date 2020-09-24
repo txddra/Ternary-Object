@@ -11,7 +11,7 @@ return name.map(person => person.name !=='' ? `Hello ${person.name}` : `Hello st
 }
 
 //testing
- console.log(sayHello(person))
+console.log(sayHello(person))
 
 
 //2.
@@ -26,8 +26,9 @@ return age > 15 ? `yes they can drive`
 : `cannot drive`;
 };
 
-console.log(oldEnough(17))
-
+console.log(oldEnough(17));
+console.log(oldEnough(12));
+console.log(oldEnough(15));
 
 //3.
 // create a variable speedMessage that has a value resulting from a ternary
@@ -38,8 +39,25 @@ console.log(oldEnough(17))
 // create a variable allowableSpeed that sets a speed based on the range of numbers that are left. so...if allowableSpeed is set to a number in that range your default output should be `<speed> is a decent speed`
 // ---
 
+// speedMessage = result of a ternary;
+//if speed = 70 log -> '70 is the perfect speed'
+function speedLogger(givenSpeed){
+
+  let allowableSpeed = `${givenSpeed} is a decent speed`
+return speedMessage = 
+givenSpeed === 70 ? `70 is the perfect speed`
+: givenSpeed >= 90 ? `Are you trying to get us killed`
+: givenSpeed < 10 ? `You should not drive`
+: givenSpeed <= 50 ? `Faster please`: allowableSpeed
+};
 
 
+console.log(speedLogger(5))
+// let allowableSpeed =
+
+// function 
+// let allowableSpeed
+// :`${allowableSpeed} is a decent speed`
 
 //4. 
 // map through an array and if the value is greater than 50 it goes in the arr1
@@ -68,6 +86,10 @@ let arr = [
   let arr2 = []
   let arr3 = []
   
+  // let sortItOut =
+  // arr.filter()
+
+  // if()
   
   
   
