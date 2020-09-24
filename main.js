@@ -93,7 +93,7 @@ let arr = [
 let sortIt = 
   arr.map((value) =>
   value > 50 ? arr1.push(Math.round(value))
-    : value < 50 && typeof value === 'number'? arr2.push(value)
+    : value < 50 && typeof value === 'number'? arr2.push((value * 100) / 100)
     : typeof value === "string"  ? arr3.push(value)
     :`word`
   );
