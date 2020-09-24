@@ -92,11 +92,10 @@ let arr = [
   
 let sortIt = 
   arr.map((value) =>
-  value > 50 
-  ? arr1.push(Math.round(value))
+  value > 50 ? arr1.push(Math.round(value))
     : value < 50 ? arr2.push(value)
-    : value === ''  ? arr3.push(value):
-    ``
+    : typeof value === "string"  ? arr3.push(value)
+    :`word`
   );
 ;
 
@@ -114,8 +113,8 @@ let sortIt =
 
 
 console.log(arr1);
-console.log(arr2)
-console.log(arr3)
+console.log(arr2);
+console.log(arr3);
 
 // let answer = sortIt(arr)
 //console.log(sortIt(arr))
