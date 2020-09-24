@@ -90,16 +90,35 @@ let arr = [
   let arr2 = [];
   let arr3 = [];
   
-let sortItOut =
-arr.map((value) =>
-  { value > 50 ? arr1.push(value)
+let sortIt = 
+  arr.map((value) =>
+  value > 50 
+  ? arr1.push(Math.round(value))
     : value < 50 ? arr2.push(value)
-    : value === '' ? arr3.push(value)});
+    : value === ''  ? arr3.push(value):
+    ``
+  );
+;
+
+
+// function sortIt(arr){
+// arr.map((value) =>{
+// value > 50 
+// ? arr1.push(Math.round(value))
+// : value < 50 ? arr2.push(value)
+// :value === '' ? arr3.push(value): 'what'}
+// )
+// }
 
 
 
-console.log(sortItOut(arr));
-  // arr.filter()
+
+console.log(arr1);
+console.log(arr2)
+console.log(arr3)
+
+// let answer = sortIt(arr)
+//console.log(sortIt(arr))
 
   // if()
   
