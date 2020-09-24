@@ -52,7 +52,11 @@ givenSpeed === 70 ? `70 is the perfect speed`
 };
 
 
-console.log(speedLogger(5))
+console.log(speedLogger(5));
+console.log(speedLogger(70));
+console.log(speedLogger(68))
+console.log(speedLogger(95));
+
 // let allowableSpeed =
 
 // function 
@@ -81,12 +85,20 @@ let arr = [
     undefined,
     NaN,
     44.98999,
-  ]
-  let arr1 = []
-  let arr2 = []
-  let arr3 = []
+  ];
+  let arr1 = [];
+  let arr2 = [];
+  let arr3 = [];
   
-  // let sortItOut =
+let sortItOut =
+arr.map((value) =>
+  { value > 50 ? arr1.push(value)
+    : value < 50 ? arr2.push(value)
+    : value === '' ? arr3.push(value)});
+
+
+
+console.log(sortItOut(arr));
   // arr.filter()
 
   // if()
